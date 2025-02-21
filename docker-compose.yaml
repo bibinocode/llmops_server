@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres
+    container_name: "llmops_db"
+    restart: "always"
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: llmops_password
+      POSTGRES_USERNAME: llmops_username
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "5438:8080"

@@ -2,6 +2,24 @@
 
 - 这是一个用于LLMOps可视化平台的服务端
 
+# 启动项目
+
+```bash
+python -m venv venv
+cd venv/Scripts
+activate
+cd ..
+cd ..
+pip install -r requirements.txt
+python -m app.http.app
+```
+
+## 依赖导出
+
+```bash
+pip freeze > requirements.txt
+```
+
 ## 待实现功能
 
 1. [ ] Postgres数据库接入

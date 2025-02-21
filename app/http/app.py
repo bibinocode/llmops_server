@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import dotenv
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
+
 from flask_migrate import Migrate
 from injector import Injector
 

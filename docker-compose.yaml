@@ -7,7 +7,7 @@ services:
       - "5432:5432"
     environment:
       POSTGRES_PASSWORD: llmops_password
-      POSTGRES_USERNAME: llmops_username
+      POSTGRES_USER: llmops_username
 
   adminer:
     image: adminer
